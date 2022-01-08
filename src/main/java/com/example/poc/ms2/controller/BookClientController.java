@@ -20,7 +20,7 @@ public class BookClientController {
     @Autowired
     private DiscoveryClient discoveryClient;
 
-    @RequestMapping(value = "/book", method = RequestMethod.GET)
+    @RequestMapping(value = "/book2", method = RequestMethod.GET)
     public ResponseEntity<List<BookDto>> getAllBook() {
         // PRINT ALL MICROSERVICE REGISTERED
         System.out.println(discoveryClient.getServices());
